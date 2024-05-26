@@ -1,0 +1,95 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.search-container {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.yellow-button {
+  background-color: yellow;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.logout-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-dialog .MuiDialog-paper {
+  max-width: 400px;
+}
+
+.cancel-button {
+  color: red;
+}
+
+.logout-button {
+  color: white;
+  background-color: red;
+}
+
+/* Responsive Styles (Old Implementation) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .search-container {
+    margin: 1rem 0;
+  }
+
+  .navbar-right {
+    margin-top: 1rem;
+  }
+}
+
+/* Responsive Styles (New Implementation) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .navbar-left {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+
+  .search-container {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .yellow-button {
+    margin-bottom: 0.5rem;
+  }
+}

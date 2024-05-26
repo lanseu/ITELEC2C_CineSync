@@ -1,0 +1,100 @@
+/* homepage.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+.collections-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  margin: 30px 0; /* Adjust margin for better spacing */
+}
+
+.collections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center collections horizontally */
+  gap: 20px; /* Add gap between collections */
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center movies horizontally */
+  gap: 20px; /* Add gap between movies */
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+.movie-card {
+  width: 200px; /* Set fixed width for movie cards */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* General styles for the pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  list-style-type: none;
+  margin: 0;
+  background-color: #4f525c;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Styles for the pagination items */
+.pagination li {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+  color: white;
+}
+
+/* Active page indicator */
+.pagination li.active {
+  background-color: #557192;
+  color: rgb(141, 224, 255);
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover effect for pagination items */
+.pagination li:hover {
+  background-color: #8698ab;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Previous and Next buttons */
+.pagination li.previous a,
+.pagination li.next a {
+  color: white;
+  padding: 16px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Hover effect for Previous and Next buttons */
+.pagination li.previous a:hover,
+.pagination li.next a:hover {
+  color: white;
+}
+
+/* Disabled state for previous and next buttons */
+.pagination.disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
