@@ -1,3 +1,4 @@
+/* Base styles */
 .movie-card {
   position: relative;
   height: auto;
@@ -48,7 +49,7 @@ p.movie-title {
   box-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
 }
 
-.movie-img-container:hover .movie-info {
+.movie-img-container:hover.movie-info {
   opacity: 1;
   visibility: visible;
 }
@@ -56,4 +57,21 @@ p.movie-title {
 .rating {
   align-items: start;
   justify-content: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  p.movie-title {
+    font-size: 18px; /* Smaller font size for titles on medium screens */
+  }
+}
+
+@media screen and (max-width: 430px) {
+  p.movie-title {
+    font-size: 14px; /* Even smaller font size for titles on small screens */
+  }
+
+  .movie-info {
+    top: 40%; /* Adjust positioning slightly for better fit on small screens */
+  }
 }

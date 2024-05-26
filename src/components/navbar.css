@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-.logout-dialog .MuiDialog-paper {
+.logout-dialog.MuiDialog-paper {
   max-width: 400px;
 }
 
@@ -47,23 +47,7 @@
   background-color: red;
 }
 
-/* Responsive Styles (Old Implementation) */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 1rem 0;
-  }
-
-  .search-container {
-    margin: 1rem 0;
-  }
-
-  .navbar-right {
-    margin-top: 1rem;
-  }
-}
-
-/* Responsive Styles (New Implementation) */
+/* Responsive Styles for general small screens */
 @media screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -91,5 +75,18 @@
 
   .yellow-button {
     margin-bottom: 0.5rem;
+  }
+}
+
+/* More specific responsive styles for iPhone-sized screens */
+@media screen and (max-width: 430px) {
+  .search-container {
+    flex-basis: 50%; /* Reduce the width of the search bar */
+    margin: 0 auto; /* Center the search bar */
+  }
+
+  .yellow-button {
+    padding: 0.25rem 0.5rem; /* Smaller padding for buttons */
+    font-size: 14px; /* Smaller text size for buttons */
   }
 }

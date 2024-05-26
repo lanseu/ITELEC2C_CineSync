@@ -447,7 +447,7 @@ nav {
   }
 
   .current-list-movies {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-gap: 30px;
     padding: 0 30px;
   }
@@ -484,7 +484,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 430px) {
   nav {
     padding: 10px 25px 20px;
   }
